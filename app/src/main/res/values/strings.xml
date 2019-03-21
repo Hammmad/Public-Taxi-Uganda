@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Public Taxi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="owner">Taxi Owner</string>
+    <string name="driver">Taxi Driver</string>
+    <string name="user">Passenger</string>
+
+    <string name="company_prompt">-- Select Insurance Company --</string>
+
+    <string-array name="company_arrays">
+        <item>-- Select Insurance Company --</item>
+        <item>Alliance Africa General Insurance Ltd</item>
+        <item>APA Insurance (U) Ltd</item>
+        <item>Britam Insurance Co. (U) Ltd</item>
+        <item>CIC General Insurance (U) Ltd</item>
+        <item>Excel Insurance Co. Ltd.</item>
+    </string-array>
+
+</resources>

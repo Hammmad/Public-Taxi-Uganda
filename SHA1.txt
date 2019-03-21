@@ -1,0 +1,41 @@
+Microsoft Windows [Version 10.0.17134.285]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nawaz> cd..
+
+C:\Users>cd..
+
+C:\>cd Program Files
+
+C:\Program Files>cd Java
+
+C:\Program Files\Java>cd jdk-10.0.2
+
+C:\Program Files\Java\jdk-10.0.2>cd bin
+
+C:\Program Files\Java\jdk-10.0.2\bin>cd bin
+The system cannot find the path specified.
+
+C:\Program Files\Java\jdk-10.0.2\bin>keytool -list -v -keystore c:\Users\Nawaz\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
+Alias name: androiddebugkey
+Creation date: Jul 28, 2018
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: C=US, O=Android, CN=Android Debug
+Issuer: C=US, O=Android, CN=Android Debug
+Serial number: 1
+Valid from: Sat Jul 28 15:59:19 PKT 2018 until: Mon Jul 20 15:59:19 PKT 2048
+Certificate fingerprints:
+         SHA1: 8E:36:BE:46:80:32:0A:EE:30:8F:AB:0D:4D:1F:14:87:AD:60:2A:61
+         SHA256: 47:6D:24:85:8E:E7:5F:68:63:03:84:FD:5E:46:42:4C:07:DE:FE:64:F2:5A:76:FB:E6:C2:8B:35:2A:B3:80:0D
+Signature algorithm name: SHA1withRSA
+Subject Public Key Algorithm: 1024-bit RSA key
+Version: 1
+
+Warning:
+The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore c:\Users\Nawaz\.android\debug.keystore -destkeystore c:\Users\Nawaz\.android\debug.keystore -deststoretype pkcs12".
+
+C:\Program Files\Java\jdk-10.0.2\bin>
+
+C:\Program Files\Java\jdk-10.0.2\bin>

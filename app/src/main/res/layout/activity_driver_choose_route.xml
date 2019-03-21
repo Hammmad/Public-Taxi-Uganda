@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DriverChooseRouteActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/firstLogin_startPoint_Click"
+        android:text="Please Select your traveling route"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/firstLogin_startPoint_Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/firstLogin_endPoint_Click"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/firstLogin_startPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="Start Point" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey_300" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/firstLogin_endPoint_Click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/firstLogin_endPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="End Point" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/grey_300" />
+    </LinearLayout>
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/firstLogin_startPoint"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/firstLogin_endPoint"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:enabled="false"-->
+    <!--android:hint="Start Point"-->
+    <!--android:imeOptions="actionNext"-->
+    <!--android:inputType="none"-->
+    <!--tools:targetApi="lollipop" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/firstLogin_endPoint"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_margin="5dp"-->
+    <!--android:enabled="false"-->
+    <!--android:hint="End Point"-->
+    <!--android:imeOptions="actionNext"-->
+    <!--android:inputType="none"-->
+    <!--tools:targetApi="lollipop" />-->
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+    <!--android:id="@+id/firstLogin_startPoint"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@id/firstLogin_endPoint"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:enabled="false"-->
+    <!--android:hint="Start Point"-->
+    <!--android:imeOptions="actionNext"-->
+    <!--android:inputType="none"-->
+    <!--android:padding="5dp"-->
+    <!--app:met_floatingLabel="normal"-->
+    <!--app:met_floatingLabelTextColor="@color/colorPrimary" />-->
+
+    <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+    <!--android:id="@+id/firstLogin_endPoint"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:enabled="false"-->
+    <!--android:hint="Start Point"-->
+    <!--android:imeOptions="actionNext"-->
+    <!--android:inputType="none"-->
+    <!--android:padding="5dp"-->
+    <!--app:met_floatingLabel="normal"-->
+    <!--app:met_floatingLabelTextColor="@color/colorPrimary" />-->
+
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.AddVehicleActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/addDriver_vehicle_img"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/imageview_frame"
+                android:scaleType="centerInside"
+                android:src="@drawable/car_avator" />
+
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/addDriver_driver_img"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="140dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginEnd="20dp"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginStart="50dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/imageview_frame"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/avatar" />-->
+
+            <!---->
+            <!--</LinearLayout>-->
+
+            <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+            <!--android:id="@+id/addDriver_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:hint="Taxi Driver Name"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:padding="5dp"-->
+            <!--app:met_floatingLabel="normal"-->
+            <!--app:met_floatingLabelTextColor="@color/colorPrimary" />-->
+
+            <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+            <!--android:id="@+id/addDriver_phone"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:hint="Phone number"-->
+            <!--android:inputType="number"-->
+            <!--android:padding="5dp"-->
+            <!--app:met_floatingLabel="normal"-->
+            <!--app:met_floatingLabelTextColor="@color/colorPrimary" />-->
+
+            <!--<com.rengwuxian.materialedittext.MaterialEditText-->
+            <!--android:id="@+id/addDriver_password"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:hint="Password"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:padding="5dp"-->
+            <!--app:met_floatingLabel="normal"-->
+            <!--app:met_floatingLabelTextColor="@color/colorPrimary" />-->
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addVehicle_make"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Make"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="5dp"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addVehicle_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Model"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="5dp"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addVehicle_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Color"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="5dp"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@color/colorPrimary" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/addVehicle_plate_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Plate number"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:padding="5dp"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@color/colorPrimary" />
+
+            <Spinner
+                android:id="@+id/addDriver_company_spinner"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawSelectorOnTop="true"
+                android:dropDownVerticalOffset="-53dp"
+                android:padding="5dp"
+                android:spinnerMode="dropdown"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/addDriver_start_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addDriver_start_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:text="Start Point" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey_300" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addDriver_end_click"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addDriver_end_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="15dp"
+                    android:text="End Point" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/grey_300" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addVehicle_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:padding="10dp"
+                android:text="Add"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

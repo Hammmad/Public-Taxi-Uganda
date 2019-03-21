@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    tools:context=".ui.UserSignUpFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/person_icon" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/user_signup_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:hint="Passenger Name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_primaryColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                app:met_underlineColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/contact_icon" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/user_signup_contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:hint="Contact"
+                android:inputType="phone"
+                android:textColor="@android:color/white"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_primaryColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                app:met_underlineColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/password_icon" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/user_signup_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_primaryColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                app:met_underlineColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/password_icon" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/user_signup_cunform_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_primaryColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                app:met_underlineColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

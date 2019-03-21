@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_img"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.OwnerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/email_icon" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/owner_login_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:hint="Owner Name"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/white"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_primaryColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                app:met_underlineColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/password_icon" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/owner_login_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                app:met_baseColor="@android:color/white"
+                app:met_floatingLabel="normal"
+                app:met_floatingLabelTextColor="@android:color/white"
+                app:met_primaryColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                app:met_underlineColor="@android:color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/owner_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Sign In"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/owner_change_password_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="Change Password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>
